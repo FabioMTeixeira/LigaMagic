@@ -1,14 +1,24 @@
 .container-card {
-    max-height: 100%;
     max-width: 100%;
+    max-height: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 3rem;
 }
 
 .main-card {
+    padding-bottom: 3rem;
     width: 20%;
+    border-bottom: 1px solid lightgrey;
+}
+
+.alignment {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
 }
 
 .sec-card {
-    width: 5%;
+    width: 12%;
 }

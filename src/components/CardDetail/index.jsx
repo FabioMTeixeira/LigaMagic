@@ -11,7 +11,7 @@ function CardDetail() {
       <div className='container-card'>
           <img className='main-card' src={Card1} alt="Imagem principal do card" />
 
-          <div className=''>
+          <div className='alignment'>
             <img src={SetaEsquerda} alt="Seta para ir para esquerda" />
             <img className='sec-card' src={Card3} alt="Variação do mesmo card" />
             <img className='sec-card' src={Card2} alt="Variação do mesmo card" />
