@@ -1,6 +1,7 @@
 import CardDetail from '../../components/CardDetail'
+import CardInfo from '../../components/CardInfo'
 
-function Main() {
+function ShopCard() {
 
   return (
     <>
@@ -9,4 +10,4 @@ function Main() {
   )
 }
 
-export default Main
+export default ShopCard
