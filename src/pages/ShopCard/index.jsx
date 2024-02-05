@@ -5,7 +5,7 @@ function ShopCard() {
 
   return (
     <>
-    <CardDetail />
+    <CardInfo />
     </>
   )
 }
