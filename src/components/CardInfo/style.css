@@ -2,6 +2,13 @@
     font-family: 'Jost', sans-serif;
 }
 
+.card-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;
+}
+
 header {
     display: flex;
     gap: 1rem;
@@ -9,14 +16,80 @@ header {
     color: #9B9B98;
 }
 
-header h3 {
+h4 {
     font-size: 1.4rem;
     font-weight: normal;
     line-height: 2rem;
     letter-spacing: 0.15px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .separated {
     padding-right: 1rem;
     border-right: 1px solid #9B9B98;
+}
+
+.dark-letter {
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1rem;
+    border: 1px solid #F4F4F2;
+    box-shadow: 5px 5px 10px rgb(236, 236, 234);
+}
+
+section div {
+    display: flex;
+    width: 25rem;
+    align-items: center;
+    gap: .5rem;
+}
+
+div section button {
+    all: initial;
+
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+article div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article div h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    letter-spacing: 0.4px;
+}
+
+.itens-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+article h3 {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.65px;
+
+    padding-top: .8rem;
+}
+
+.retangle {
+    background-color: #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }

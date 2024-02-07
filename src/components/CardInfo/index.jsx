@@ -1,42 +1,78 @@
 import LetterC from '../../assets/letterC.svg'
 import SetaBaixo from '../../assets/setaBaixo.svg'
+import Point from '../../assets/point.svg'
+import Coracao from '../../assets/coracao.svg'
+import Interrogacao from '../../assets/interrogacao.svg'
+import Mais from '../../assets/plus.svg'
+import Menos from '../../assets/menos.svg'
+import Config from '../../assets/config.svg'
 import './style.css'
 
 function CardInfo() {
 
   return (
-    <div>
+    <div className='card-container'>
       <div>
         <header>
-          <h3 className='separated'>Home</h3>
-          <h3 className='separated'>Magic : The Gathering</h3>
-          <h3 className='separated'>Busca</h3>
-          <h3>Bazar - Lista de Desejos</h3>
+          <h4 className='separated'>Home</h4>
+          <h4 className='separated'>Magic : The Gathering</h4>
+          <h4 className='separated'>Busca</h4>
+          <h4>Bazar - Lista de Desejos</h4>
         </header>
         <section>
-          <img src={LetterC} alt="Letra C" />
-          <h3>#045</h3>
-          <h3>Dominaria Remastered</h3>
+          <div>
+            <img src={LetterC} alt="Letra C" />
+            <h4 className='dark-letter'>#045</h4>
+            <h4>Dominaria Remastered</h4>
+          </div>
           <button>
             DMR
             <img src={SetaBaixo} alt="Seta para baixo" />
           </button>
         </section>
-        <details>
+        <article>
           <div>
             <h2>Contramágica</h2>
-            <div>
-              <img src="" alt="" />
+            <div className='itens-card'>
+              <img src={Coracao} alt="Desenho de coração" />
               <button>
-                <img src="" alt="" />
+                <img src={Point} alt="Três pontos" />
               </button>
             </div>
           </div>
 
           <h3>CounterSpell</h3>
-        </details>
-
+        </article>
       </div>
+
+      <div className='retangle'>
+        <div>
+          <h2>Lista de Compras</h2>
+          <button>
+            <img src={Interrogacao} alt="Ponto de interrogação" />
+          </button>
+        </div>
+        <h3>Add a carta aqui e deixe que a Liga calcule o melhor preço para você!</h3>
+        <div>
+          <div>
+            <button>
+              <img src={Mais} alt="Sinal de mais" />
+            </button>
+            <h3>1</h3>
+            <button>
+              <img src={Menos} alt="Sinal de Menos" />
+            </button>
+          </div>
+          <button>
+            <img src={Config} alt="Aba de configuração" />
+          </button>
+          <button>
+            <img src={Mais} alt="Sinal de mais" />
+            <h3>ADICIONAR NA LISTA</h3>
+          </button>
+        </div>
+      </div>
+      <div></div>
     </div>
   )
 }
