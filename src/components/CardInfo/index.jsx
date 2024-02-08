@@ -7,8 +7,21 @@ import Mais from '../../assets/plus.svg'
 import Menos from '../../assets/menos.svg'
 import Config from '../../assets/config.svg'
 import './style.css'
+import { useState } from 'react'
 
 function CardInfo() {
+  const [contador, setContador] = useState(1)
+
+  const aumentarContador = () => {
+    setContador(contador + 1)
+  }
+
+  const diminuirContador = () => {
+    if (contador <= 1) {
+      return setContador(1)
+    }
+    setContador(contador - 1)
+  }
 
   return (
     <div className='card-container'>
@@ -46,27 +59,31 @@ function CardInfo() {
       </div>
 
       <div className='retangle'>
-        <div>
+        <div className='alignament'>
           <h2>Lista de Compras</h2>
           <button>
             <img src={Interrogacao} alt="Ponto de interrogação" />
           </button>
         </div>
         <h3>Add a carta aqui e deixe que a Liga calcule o melhor preço para você!</h3>
-        <div>
-          <div>
-            <button>
+        <div className='alignament-sell'>
+          <div className='alignament-sell number-space'>
+            <button
+              onClick={aumentarContador}
+            >
               <img src={Mais} alt="Sinal de mais" />
             </button>
-            <h3>1</h3>
-            <button>
+            <h3>{contador}</h3>
+            <button
+              onClick={diminuirContador}
+            >
               <img src={Menos} alt="Sinal de Menos" />
             </button>
           </div>
-          <button>
+          <button className='btn-borders-shadows'>
             <img src={Config} alt="Aba de configuração" />
           </button>
-          <button>
+          <button className='alignament-sell'>
             <img src={Mais} alt="Sinal de mais" />
             <h3>ADICIONAR NA LISTA</h3>
           </button>

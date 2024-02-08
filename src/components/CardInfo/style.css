@@ -23,6 +23,10 @@ h4 {
     letter-spacing: 0.15px;
 }
 
+button {
+    all: initial;
+}
+
 button:hover {
     cursor: pointer;
 }
@@ -53,8 +57,6 @@ section div {
 }
 
 div section button {
-    all: initial;
-
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -90,6 +92,66 @@ article h3 {
 }
 
 .retangle {
-    background-color: #ccc;
+    background-color: #ECECEA;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+
+    padding: 2rem;
+}
+
+.alignament {
+    display: flex;
+    align-items: flex-end;
+
+    gap: 1rem;
+}
+
+.alignament h2 {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.3px;
+    color: #474745;
+}
+
+.retangle h3 {
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.25px;
+
+    color: #727270;
+}
+
+.alignament-sell {
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.number-space {
+    width: 10rem;
+    padding: .6rem;
+
+    justify-content: space-between;
+
+    background-color: #F4F4F2;
+
+    border: 1px solid #CECECE;
+}
+
+.number-space h3 {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: -0.25px;
+
+    color: #04050C;
+}
+
+.btn-borders-shadows {
+    padding: .5rem;
+
+    border: 1px solid #CECECE;
+    box-shadow: 0px 2px 4px rgb(206, 206, 206);
 }
