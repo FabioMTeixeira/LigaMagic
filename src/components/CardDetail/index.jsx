@@ -7,19 +7,19 @@ import './style.css'
 
 function CardDetail() {
 
-    return (
-      <div className='container-card'>
-          <img className='main-card' src={Card1} alt="Imagem principal do card" />
+  return (
+    <div className='container-card'>
+      <img className='main-card' src={Card1} alt="Imagem principal do card" />
 
-          <div className='alignment'>
-            <img src={SetaEsquerda} alt="Seta para ir para esquerda" />
-            <img className='sec-card' src={Card3} alt="Variação do mesmo card" />
-            <img className='sec-card' src={Card2} alt="Variação do mesmo card" />
-            <img className='sec-card' src={Card1} alt="Variação do mesmo card" />
-            <img src={SetaDireita} alt="Seta para ir para esquerda" />
-          </div>
+      <div className='alignment'>
+        <img className='smaller' src={SetaEsquerda} alt="Seta para ir para esquerda" />
+        <img className='sec-card' src={Card3} alt="Variação do mesmo card" />
+        <img className='sec-card' src={Card2} alt="Variação do mesmo card" />
+        <img className='sec-card' src={Card1} alt="Variação do mesmo card" />
+        <img className='smaller' src={SetaDireita} alt="Seta para ir para esquerda" />
       </div>
-    )
-  }
-  
-  export default CardDetail
+    </div>
+  )
+}
+
+export default CardDetail
